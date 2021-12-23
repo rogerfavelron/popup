@@ -12,13 +12,14 @@
     height:34rem;
 }
 .popup__title{
-    font-size:2.5rem;/* 4rem*/
+    font-size:2.5rem;
     font-weight: 500;
 }
 .popup__promotion{
-    font-size:1rem;/* 1.25rem*/
+    font-size:1rem;
     font-weight: 500;
-    width:70%;
+    width: 70%;
+    overflow-wrap: break-word;
 }
 
 .popup__form{
@@ -55,6 +56,7 @@ border:none;
     .popup__promotion{
         font-size:1.25rem;
         width:20rem;
+        
     }
     .popup__form{
         width:22rem;

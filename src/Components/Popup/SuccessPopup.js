@@ -4,7 +4,6 @@ import { useSelector } from 'react-redux';
 import { selectSettings } from '../../Redux/settingsSlice';
 import SuccessVector from '../../Assets/success.svg';
 
-
 const SuccessPopup = () => {
     const settings = useSelector(selectSettings);
     const successMessage = settings.successMessage;

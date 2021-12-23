@@ -3,8 +3,8 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    /*border:1px solid black;*/
     font-family: 'Inter',sans-serif;
+    overflow-wrap: break-word;
 }
 *:hover,*:focus{
 outline:none;

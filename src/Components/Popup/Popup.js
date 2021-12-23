@@ -14,7 +14,6 @@ const Popup = () => {
     const headline = settings.headline;
     const description = settings.description;
     const email = personalData.email;
-    console.log("email", email);
 
     const [totalFonts, setTotalFonts] = useState([]);
 
@@ -39,11 +38,13 @@ const Popup = () => {
                 const result = await axios.get('/', { cancelToken: cancelTokenSource.token });
                 const data = result.data;
                 console.log("data is fetched", data)
+                //Sort alphabetically
                 data.sort((a, b) => {
                     if (a.family < b.family) return -1;
                     if (a.family > b.family) return 1;
                     return 0;
                 })
+                //Filter
                 const filteredData = data.filter(x => x.category !== "monospace");
                 console.log("fonts data", filteredData);
                 setTotalFonts(filteredData);
@@ -53,7 +54,7 @@ const Popup = () => {
             }
         }
         getFunction();
-
+        //Cleanup useEffect
         return () => { cancelTokenSource.cancel() };//cleanup with cancel 
     }, [])
 
