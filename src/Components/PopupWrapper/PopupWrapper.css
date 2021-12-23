@@ -1,0 +1,19 @@
+.popupWrapper{
+    background-image:url('../../Assets/backgroundImage.svg') ;
+    background-color: #585b68;
+    width:100%;
+    padding:2rem;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:1350px){
+    .popupWrapper {
+        background-size: 60rem;
+    }
+}

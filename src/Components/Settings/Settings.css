@@ -1,0 +1,38 @@
+.settings{
+    background-color:inherit;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+    height:27.5rem;
+}
+.settings__title{
+    height:3rem;
+    width:12rem;
+    font-weight:500;
+    line-height:3rem;
+    font-size:1.5rem;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+.settings__input__wrapper{
+    width:22rem;
+
+}
+.settings__input__title{
+    font-size:1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    margin-bottom:0.6rem;
+}
+.settings__input{
+ width:100%;
+ height:3rem;   
+ border-radius: 0.5rem;
+ border: 1px solid #D2DAE3;
+ padding:1rem;
+ font-weight: 400;
+}
+.settings__input__textarea{
+height:6.5rem;
+resize:none;
+}
